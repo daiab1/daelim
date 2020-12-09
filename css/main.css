@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+#container{}
+
+.mainSlider{
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainSlider>img{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    width: 100%;
+}
+
+.mainSlider .swiper-wrapper .swiper-pagination{
+    width:10px;
+    height: 2px;
+    background: #fff;
+}
+
+.mainTxtWrap{ 
+    position: relative;
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+.mainTxtWrap .mainTxt{
+    position: absolute;
+    left: 10px;
+    top: -384px;
+    text-align: left;
+    color: #fff;
+}
+.mainTxtWrap .mainTxt h2{
+    font-size: 70px;
+    font-family: 'Roboto'
+}
+.mainTxtWrap .mainTxt p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-top: 12px;
+}
+.mainTxtWrap .mainTxt p span{
+    display: block;
+}
+
+.mainSlider .swiper-pagination{
+    text-align: left;
+    left: 330px;
+    bottom: 70px;
+
+}
+.mainSlider .swiper-pagination-bullet{
+    width: 40px;
+    height: 3px;
+    border-radius: 0;
+    background: #d0cece;
+    opacity: 100%;
+}
+.mainSlider .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin-right: 4px;
+}
+.swiper-pagination  .swiper-pagination-bullet-active {
+    background-color: #25afe4;
+}
+
+
+.mainSlider .stopBtn{
+    position: absolute;
+    bottom:72px;
+    left: 480px;
+    z-index: 10;
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    background: url(../images/main/btnPauseG.png)no-repeat;
+    text-indent: -9999px;
+}
+.mainSlider .stopBtn a{
+    display: block;
+}
+
+.mainSlider .stopBtn:active{
+    background-image: url(../images/main/btnPause.png);
+}
+/*mainCon01 사업분야*/
+.mainCon01{
+    padding-bottom: 110px;
+}
+
+/*컨텐츠타이틀(공통)*/
+.conTitle{
+    text-align: center;
+    padding-top: 90px;
+}
+.conTitle h2{
+    font-weight: 700;
+    font-size: 44px;
+}
+.conTitle p{
+    color: #615f5f;
+    margin-bottom: 60px;
+}
+
+/*사업영역 이름*/
+.mainCon01 .bizWrap{
+
+}
+.mainCon01 .bizWrap .bizName{
+    margin: 0 140px;
+    text-align: center;
+    margin-bottom: 40px;   
+}
+
+.mainCon01 .bizWrap .bizName li{
+    float: left;
+    width: 20%;
+    margin-bottom: -3px;
+}
+.mainCon01 .bizWrap .bizName li a{
+    color: #8b8686;
+    font-size: 17px;
+    display: block;
+    height: 100%;
+}
+
+.mainCon01 .bizWrap .bizName li.active a{
+    color: #1b2e5a;
+    font-weight: 600;
+    display: block;
+}
+.mainCon01 .bizWrap .bizName li.active::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 4px;
+    background: #1b2e5a;
+    margin: 20px auto 0;
+}
+
+.mainCon01 .bizWrap .bizName::after{
+    content: "";
+    display: block;
+    width: 900px;
+    height: 2px;
+    background: #dcdcdc;
+    margin: 0 auto;    
+}
+
+
+.bizSliderBox{
+    width: 1280px;
+    height: 500px;
+    background: #1b2e5a;
+}
+
+.bizSliderBox.swiper-container .swiper-wrapper li {
+    background-position: 110px top ;
+    height: 550px;
+    position: relative;
+}
+.biz01{background: url(../images/main/con01Img01.png)no-repeat;}
+.biz02{background: url(../images/main/con01Img02.png)no-repeat;}
+.biz03{background: url(../images/main/con01Img03.png)no-repeat;}
+.biz04{background: url(../images/main/con01Img04.png)no-repeat;}
+.biz05{background: url(../images/main/con01Img05.png)no-repeat;}
+
+
+.bizSliderBox.swiper-container .swiper-wrapper li .bizTxtBox{
+    width: 400px;
+    height: 500px;
+    background: #f5f5ef;
+    position: absolute;
+    right: 0;
+    color: #1b2e5a;
+    padding: 86px 70px 100px 40px;
+    box-sizing: border-box;
+    
+}
+.bizTxtBox .bizTit h3{    font-size: 32px;}
+.bizTxtBox .bizTit h3::after{
+    content: "";
+    display: block;
+    width: 85px;
+    height: 6px;
+    background: #1b2e5a;
+    margin-top: 10px;
+}
+
+.bizTxtBox p{
+    font-weight: 200;
+    margin: 30px 0 53px;
+}
+.bizTxtBox p span{
+    display: block;
+}
+
+.bizTxtBox .moreBtn{
+    width: 245px;
+    height: 70px;
+    border: 1px solid #1b2e5a;
+    text-align: center;
+}
+.bizTxtBox .moreBtn a{
+    display: block;
+    line-height: 70px;
+    color: #1b2e5a;
+
+}
+.bizTxtBox .moreBtn:hover a{
+    background: rgba(27,46,90,0.9);
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+
+/*mainCon02*/
+.mainCon02{
+    background: url(../images/main/con02Back.png)no-repeat center center;
+    height: 700px;
+    color: #fff;
+}
+.mainCon02 .conTitle{
+    padding-top: 140px;
+}
+.mainCon02 .conTitle p{
+    color: #fff;
+}
+
+.mainCon02 .con02BoxList{}
+.mainCon02 .con02BoxList li{
+    background: url(../images/main/con02TxtBack.png)no-repeat;
+    width: 290px;
+    height: 270px;
+    float: left;
+    margin-right: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mainCon02 .con02BoxList li:last-child{
+    margin-right: 0;
+}
+.mainCon02 .con02BoxList li .con02Txt{
+    width: 270px;
+    height: 250px;
+    text-align: center;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+.mainCon02 .con02BoxList li .con02Txt p.num span{
+    font-size: 50px;
+    font-weight: 700;
+}
+.mainCon02 .con02BoxList li .con02Txt p.num{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.mainCon02 .con02BoxList li .con02Txt p {
+    font-weight: 300
+}
+
+/*mainCon03 NewsRoom*/
+.mainCon03{
+    background: #eef2fa;
+    padding-bottom: 160px;
+    position: relative;
+}
+.mainCon03 .newsList li{
+    float: left;
+    width: 620px;
+    height: 350px;
+    background: #fff;
+    margin-right: 40px;
+    box-sizing: border-box;
+    padding: 80px  64px 60px;
+    
+}
+.mainCon03 .newsList li:nth-child(2n){
+    margin-right: 0;
+}
+.mainCon03 .newsList li h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.mainCon03 .newsList li p{
+    margin-bottom: 50px;
+    width: 450px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainCon03 .newsList li p.date{
+    font-size: 12px;
+    color: #908b8b;
+    margin: 62px 0;
+}
+.mainCon03 .newsList li p.date::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #908b8b;
+    margin-bottom: 14px;
+}
+
+.mainCon03 .swiper-button-prev,.mainCon03 .swiper-button-next{
+    background: url(../images/main/arrowLeft.png)no-repeat ;
+    width: 10px;
+    height: 16px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 230px;
+}
+.mainCon03 .swiper-button-prev{
+    left: 81%
+}
+.mainCon03 .swiper-button-next{
+    background: url(../images/main/arrowRight.png)no-repeat;
+    right: 17%;
+}
+
+
+/*mainCon04 aboutDaelim*/
+.mainCon04{
+    padding-bottom: 90px;
+}
+.con04Conts{
+    display: inline-block;  
+}
+.mainCon04 .con04Conts{
+    text-align: center;
+    margin:0 110px;
+}
+.mainCon04 .con04Conts li{
+    float: left;
+    width: 180px;
+    margin-right: 260px;
+}
+.mainCon04 .con04Conts li:last-child{
+    margin-right: 0;
+}
+.mainCon04 .con04Conts li a{
+    display: block;
+    width: 100px;
+    height: 150px;
+}
+.mainCon04 .con04Conts li a span{
+    background: url(../images/main/con04Icon01.png)no-repeat center center;
+    text-indent: -9999px;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.mainCon04 .con04Conts li a span.finan{background-image: url(../images/main/con04Icon02.png);}
+.mainCon04 .con04Conts li a span.recru{background-image: url(../images/main/con04Icon03.png);}
+.mainCon04 .con04Conts li a h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    padding-top: 20px;
+}
+.mainCon04 .con04Conts li a h4.finanT{
+    text-indent:5px;
+}
+
+.mainCon04 .con04Conts li:hover a span{background-image: url(../images/main/con04icon01On.png);}
+.mainCon04 .con04Conts li:hover a span.finan{background-image: url(../images/main/con04Icon02On.png);}
+.mainCon04 .con04Conts li:hover a span.recru{background-image: url(../images/main/con04Icon03On.png);}
+
+.mainCon04 .con04Conts li a span.on{
+    background-image: url(../images/main/con04icon01On.png);
+}
+.mainCon04 .con04Conts li a h4.on{
+    color:#1b2e5a;
+} 
+.mainCon04 .con04Conts li:hover a h4{
+    color:#1b2e5a;
+}

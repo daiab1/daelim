@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/*헤더*/
+.wrapHeader{
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+}
+#header{
+    position: relative;
+    width: 100%;
+    background-color:rgba(5,6,6,0.2);
+    height: 50px;
+
+}
+#header div{
+    position: relative;
+    z-index: 1; 
+    
+}
+#header div a{
+    color: #fff;   
+}
+#header h1{
+    float: left;
+    width: 293px;
+    height: 50px;
+    background: url(../images/common/logo.png)no-repeat 0px 15px;
+    text-indent: -9999px;
+}
+#header h1 a{
+    display: block;
+}
+
+#header .gnb{
+    width: 100%;
+    height: 50px;
+}
+#header .gnb a{}
+#header .gnb .mainGnb{
+    float: left;
+    margin-left: 66px;
+}
+
+/*메인메뉴*/
+#header .gnb .mainGnb ul{
+    overflow: hidden;
+}
+#header .gnb .mainGnb ul li{
+    float: left;
+    width: 130px;
+    line-height: 50px;
+    text-align: center;
+}
+#header .gnb .mainGnb ul li a{
+    display: block;
+}
+
+/*서브메뉴*/
+.subMenu{
+    background: #1b2e5a;
+    height: 350px;
+}
+.subMenu li{}
+.subMenu li a{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*메뉴호버*/
+#header .gnb .mainGnb ul li:hover>a{
+    color: #1b2e5a;
+    background: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/*util*/
+#header .util{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#header .util div{
+    float: left;
+    width: 56px;
+    text-align: center;
+    
+}
+#header .util div a{
+    line-height: 50px;
+}
+
+#header .util select{
+    color: #fff;
+    background: url(../images/common/arrowBottom.png)no-repeat 84% center;
+    border: none;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    width: 56px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 16px;
+    
+}
+select::ms-expand{display: none;}
+
+select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+select:disabled {
+  opacity: 0.5;
+}
+
+
+#header .util .lang a{
+    line-height: 50px;
+    display: block;
+}
+
+#header .util .search a{
+    display: block;
+}
+
+
+
+/*footer*/
+#footer{
+    background: #323b4a;
+    color: #a2a9b3;
+    font-weight: 300;
+    position: relative;
+}
+
+#footer .fTop{
+
+    border-bottom: 1px solid #908e8e;
+    padding-bottom: 20px;
+    
+}
+#footer .fTop ul{
+    float: left;
+    padding-top: 24px;
+}
+#footer .fTop li{
+    float: left;
+}
+#footer .fTop li a{
+    color: #a2a9b3;
+    font-size: 14px;
+    
+}
+#footer .fTop li.on a{
+    color: #fff;
+    font-weight: 400;
+    
+}
+
+#footer .fTop li::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 17px;
+    background: #a2a9b3;
+    margin:  0 10px;
+    vertical-align: middle;
+}
+#footer .fTop li:last-child::after{
+    display: none;
+}
+
+#footer .fTop li:hover a{
+    color: #fff;
+    font-weight: 400;
+}
+
+#footer .fTop span{
+    
+    font-size: 13px;
+    font-family: 'Roboto';
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-left: 320px;
+}
+#footer .fTop .fBtn{
+    margin-top: 20px;
+    float: right;
+    width: 150px;
+    height: 40px;
+    background: #161c25;
+    text-align: center;
+
+}
+#footer .fTop .fBtn a{
+    display: block;
+    color: #c5c6ca;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+#footer .fTop .fBtn:hover{
+    background: #111317; 
+}
+#footer .fTop .fBtn:hover a{
+    color: #fff
+}
+
+#footer .fBottom{
+    background: url(../images/common/fLogo.png)no-repeat 0 38px ;
+    padding: 38px 0 40px;    
+}
+#footer .fBottom p{
+    padding-left: 330px;
+    font-size: 13px;
+    line-height: 25px;
+    font-family: 'Roboto';
+}
+
+
+#footer .topBtn{
+    position: absolute;
+    right: 220px;
+    bottom: 228px;
+    width: 60px;
+    height: 60px;
+    background: url(../images/common/topBtnL.png)no-repeat;
+    text-indent: -9999px;
+}
+.topBtn a{
+    display: block;
+    height: 100%;
+}
+#footer .topBtn:hover{
+    background-image: url(../images/common/topBtnOnL.png);
+
+}
